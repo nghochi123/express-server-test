@@ -1,6 +1,7 @@
 const express = require('express');
 const request = require('request')
 const router = new express.Router();
+require('dotenv').config();
 
 const hourlyWeather = process.env.OPENWEATHER_KEY;
 

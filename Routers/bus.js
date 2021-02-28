@@ -1,6 +1,7 @@
 const express = require('express');
 const request = require('request')
 const router = new express.Router();
+require('dotenv').config();
 
 const busArrivalUrl = "http://datamall2.mytransport.sg/ltaodataservice/BusArrivalv2?"
 const busStopCodes = "http://datamall2.mytransport.sg/ltaodataservice/BusStops"
