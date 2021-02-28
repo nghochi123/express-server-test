@@ -4,7 +4,7 @@ const router = new express.Router();
 
 const busArrivalUrl = "http://datamall2.mytransport.sg/ltaodataservice/BusArrivalv2?"
 const busStopCodes = "http://datamall2.mytransport.sg/ltaodataservice/BusStops"
-const headers = { 'AccountKey': 'ZLvdyLjWTPCnY52q09NC1g==', 'accept': 'application/json'}
+const headers = { 'AccountKey': process.env.LTA_KEY, 'accept': 'application/json'}
 
 
 router.get('/bus/allbuses', (req,res)=>{
